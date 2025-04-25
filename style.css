@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Cherry+Swash&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-image: url('bg-netflix-catalog.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Cherry Swash', cursive;
+  color: #ffb6d9;
+  text-shadow: 0 0 12px rgba(255, 182, 193, 0.6);
+}
+
+.descricao {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  padding: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  font-size: 1.2rem;
+  color: #ffeaf5;
+  line-height: 1.7;
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.3);
+}
+
+form, input, select, button {
+  margin: 0.5rem;
+}
+
+input, select {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 2px solid #ff8fc9;
+  border-radius: 14px;
+  background-color: rgba(255,255,255,0.85);
+  color: #4b2c36;
+  width: 200px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 14px;
+  background-color: #ff69b4;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 2px 2px 6px rgba(255, 182, 193, 0.4);
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ff85c1;
+  transform: scale(1.05);
+}
+
+#searchInput {
+  width: 90%;
+  max-width: 400px;
+  margin: 1rem auto;
+  padding: 0.6rem;
+  border-radius: 12px;
+  border: 2px solid #ffa6c9;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.listas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.listas h2 {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  color: #ff9fcb;
+  font-size: 1.6rem;
+  font-family: 'Cherry Swash', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.listas h2::before {
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 360px;
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.4);
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+li:hover {
+  transform: scale(1.02);
+  background-color: rgba(255, 230, 240, 0.2);
+}
+
+.item-content {
+  text-align: left;
+  flex: 1;
+  word-break: break-word;
+  color: #fff8fb;
+}
+
+.item-content.checked {
+  text-decoration: line-through;
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+li button {
+  background-color: #f78fb3;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  min-width: 80px;
+  text-align: center;
+  border: none;
+}

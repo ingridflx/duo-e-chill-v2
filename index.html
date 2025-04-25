@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duo & Chill - Our Geek List</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <h1>Duo & Chill</h1>
+  <div class="descricao">
+    Este site foi criado para nos ajudar a organizar os <strong>filmes, séries e jogos</strong> que desejamos assistir ou jogar. Marque como visto quando tivermos assistido ou jogado! 
+  </div>
+
+  <form id="addForm">
+    <input type="text" id="itemInput" placeholder="Adicionar novo título..." required />
+    <select id="categoriaSelect">
+      <option value="filme">Filme</option>
+      <option value="serie">Série</option>
+      <option value="jogo">Jogo</option>
+    </select>
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <input type="text" id="searchInput" placeholder="Buscar título..." />
+
+  <div>
+    <button id="filter-watched">Vistos/Jogados</button>
+    <button id="filter-not-watched">Pendentes</button>
+  </div>
+
+  <div class="listas">
+    <div>
+      <h2>🎬 Filmes</h2>
+      <ul id="filmeList"></ul>
+    </div>
+    <div>
+      <h2>📺 Séries</h2>
+      <ul id="serieList"></ul>
+    </div>
+    <div>
+      <h2>🎮 Jogos</h2>
+      <ul id="jogoList"></ul>
+    </div>
+  </div>
+</body>
+</html>
